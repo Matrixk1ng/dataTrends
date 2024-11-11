@@ -9,9 +9,8 @@ This project consists of a **Next.js** frontend that interacts with a **Flask** 
 3. [Frontend Setup (Next.js)](#frontend-setup-nextjs)
 4. [Backend Setup (Flask)](#backend-setup-flask)
 5. [Running the Application](#running-the-application)
-6. [API Endpoints](#api-endpoints)
-7. [Technologies Used](#technologies-used)
-8. [Troubleshooting](#troubleshooting)
+6. [Technologies Used](#technologies-used)
+
 
 ---
 
@@ -36,19 +35,26 @@ Make sure you have the following installed:
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
   pip install flask flask-cors sqlalchemy pandas
-2. ## Frontend Setup
+2. ## Frontend Setup (Next.js)
   Frontend (Next.js): Navigate to the frontend folder and install the necessary npm packages:
 
   cd frontend
   npm install
-3. ## Backend Setup
+3. ## Backend Setup (Flask)
   Database Setup: The backend uses an SQLite database. You can initialize the database with the following command:
   python init_db.py
   
-  Run the Backend: In the backend directory, run:
-  python app.py
-  
-4. ## Technologies Used
+ 
+4. ## Running the Application
+    Run the Backend: In the backend directory, run:
+    python app.py
+
+    Run the frontend:
+    cd frontend
+    cd datatrends
+    then run:
+    npm run dev
+6. ## Technologies Used
   Frontend:
   
   Next.js
