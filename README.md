@@ -35,17 +35,17 @@ Make sure you have the following installed:
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
   pip install flask flask-cors sqlalchemy pandas
-2. ## Frontend Setup (Next.js)
+## Frontend Setup (Next.js)
   Frontend (Next.js): Navigate to the frontend folder and install the necessary npm packages:
 
   cd frontend
   npm install
-3. ## Backend Setup (Flask)
+## Backend Setup (Flask)
   Database Setup: The backend uses an SQLite database. You can initialize the database with the following command:
   python init_db.py
   
  
-4. ## Running the Application
+## Running the Application
     Run the Backend: In the backend directory, run:
     python app.py
 
@@ -54,7 +54,7 @@ Make sure you have the following installed:
     cd datatrends
     then run:
     npm run dev
-6. ## Technologies Used
+## Technologies Used
   Frontend:
   
   Next.js
