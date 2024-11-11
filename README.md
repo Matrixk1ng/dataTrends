@@ -36,18 +36,19 @@ Make sure you have the following installed:
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
   pip install flask flask-cors sqlalchemy pandas
-2. Frontend
+2. ## Frontend Setup
   Frontend (Next.js): Navigate to the frontend folder and install the necessary npm packages:
 
   cd frontend
   npm install
-3. Backend Setup (Flask)
+3. ## Backend Setup
   Database Setup: The backend uses an SQLite database. You can initialize the database with the following command:
   python init_db.py
   
   Run the Backend: In the backend directory, run:
   python app.py
-4. Technologies Used
+  
+4. ## Technologies Used
   Frontend:
   
   Next.js
