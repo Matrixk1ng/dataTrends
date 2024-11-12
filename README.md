@@ -34,7 +34,7 @@ Make sure you have the following installed:
   
    python -m venv venv
    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-  pip install flask flask-cors sqlalchemy pandas
+  pip install flask flask-cors sqlalchemy pandas psycopg2-binary
 ## Frontend Setup (Next.js)
   Frontend (Next.js): Navigate to the frontend folder and install the necessary npm packages:
 
