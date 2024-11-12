@@ -4,15 +4,20 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 app = Flask(__name__)
-CORS(app)  # Allows cross-origin requests from the frontend
+CORS(app)  # Enables CORS for cross-origin requests
 
-# Connect to a local SQLite database (or other DB if desired)
-engine = create_engine("sqlite:///mydatabase.db")
+# AWS RDS Database connection information
+db_user = 'your_rds_username'
+db_password = 'your_rds_password'
+db_host = 'your_rds_endpoint'  # Example: database-1.xxxxxxxx.us-east-1.rds.amazonaws.com
+db_name = 'your_database_name'
+
+# PostgreSQL connection string
+engine = create_engine(f'postgresql+psycopg2://{db_user}:{db_password}@{db_host}/{db_name}')
 
 @app.route('/api/data', methods=['GET'])
 def get_data():
-    # Query the database for data to display
-    query = "SELECT * FROM my_table"  # Replace with your table name
+    query = "SELECT * FROM my_table"  # Replace with your actual table name
     df = pd.read_sql(query, engine)
     data = df.to_dict(orient='records')
     return jsonify(data)
