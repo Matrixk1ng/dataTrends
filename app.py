@@ -8,9 +8,9 @@ import psycopg2.extras
 
 try:
     conn = psycopg2.connect(
-        dbname='postgres',  # Change to the actual database name if needed
-        user='obinna',
-        password='flame86362',  # Make sure this is correct
+        dbname='',  # Change to the actual database name if needed
+        user='',
+        password='',  # Make sure this is correct
         host='database-1.cpae2o6w06c0.us-east-2.rds.amazonaws.com',
         port='5432',
         sslmode='require'
